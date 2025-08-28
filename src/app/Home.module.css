@@ -1,0 +1,52 @@
+/* app/Home.module.css */
+.main {
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Aplica um novo estilo para telas maiores que 768px */
+@media (min-width: 768px) {
+  .grid {
+    /* Você pode aumentar o tamanho mínimo do card aqui */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1rem;
+  padding: 0.75rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: black; /* <-- ADICIONE ESTA LINHA */
+}
+
+.coverImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

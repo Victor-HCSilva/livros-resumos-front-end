@@ -1,0 +1,30 @@
+/* app/manga/[slug]/[chapterNumber]/ChapterReader.module.css */
+.readerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #212121; /* Fundo escuro para melhor leitura */
+  color: #fff;
+}
+
+.readerHeader {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+.readerHeader a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageImage {
+  max-width: 100%;
+  height: auto;
+}
