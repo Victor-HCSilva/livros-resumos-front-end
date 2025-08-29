@@ -60,6 +60,7 @@ export default async function MangaDetailPage({ params }: { params: { slug: stri
           <p><strong>Autor:</strong> {manga.author.name}</p>
           <p><strong>Artista:</strong> {manga.artist.name}</p>
           <p><strong>Status:</strong> {manga.status}</p>
+          <strong>Sinopse:</strong>
           <p className={styles.description}>{manga.description}</p>
         </div>
       </div>
